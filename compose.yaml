@@ -2,12 +2,10 @@ services:
   api:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./docker/go/Dockerfile
     ports:
       - "8080:8080"
     restart: unless-stopped
-    volumes:
-      - .:/app
     networks:
       - zen-network
     healthcheck:

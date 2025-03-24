@@ -12,7 +12,7 @@ clean:
 
 # Docker ビルド・実行用
 d-build:
-	docker build -t zen-example-api .
+	docker build -t zen-example-api docker/go/
 
 d-run:
 	docker run -p 8080:8080 zen-example-api
